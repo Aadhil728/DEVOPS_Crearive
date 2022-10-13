@@ -5,11 +5,14 @@
 
 p{
     margin-bottom: unset;
-    font-size: 14px;
 }
 
 h1{
     font-weight: bold;
+}
+
+.navbar{
+    background-color: #000;
 }
 
 .navbar-brand{
@@ -19,26 +22,27 @@ h1{
 }
 
 .navbar-nav .nav-item a{
-    color: black;
+    color: #ffffff;
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: bold;
 }
 
 .navbar-nav .nav-item a:hover{
-    color: gray;
+    border-bottom: 1px solid #fa6279;
+    color: #fa6279;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
-    color: unset;
+    color: #fa6279;
+    border-bottom: 1px solid #fa6279;
 }
 
 /* ---------------------banner section------------------- */
 .banner{
     position: relative;
-    background-image: url(img/4th-bg-image.jpg);
-    min-height: calc(100vh - 80px);
-    min-width: 100%;
+    background-image: url(img/bg-image.jpeg);
+    height: calc(100vh - 99px);
     object-fit: cover;
     object-position: center;
     background-repeat: no-repeat;
@@ -46,18 +50,18 @@ h1{
 
 .banner .banner-text{
     position: absolute;
-    top: 30%;
+    top: 17%;
+    left: 19%;
 }
 
 .banner .banner-text h1{
-    font-size: 75px;
-    font-weight: bold;
+    font-size: 100px;
+    font-weight: normal;
+    color: #ffffff;
 }
 
-.banner .banner-text p{
-    font-size: 20px;
-    font-weight: bold;
-    width: 70%;
+.banner .banner-text h1 span{
+    color: #fa6279;
 }
 
 /* ---------------------services section------------------- */
@@ -116,10 +120,11 @@ h1{
 }
 
 
-@media screen and (max-width: 768px){
+@media (min-width:280px) and (max-width:900px){
     .banner .banner-text{
         position: absolute;
-        top: 30%;
+        top: 37%;
+        left: 16%;
     }
     
     .banner .banner-text h1{
@@ -134,11 +139,21 @@ h1{
         flex-direction: column;
         gap: 30px;
     }
-}
 
-@media screen and (max-width: 900px){
+    .banner-2 .banner-text{
+        top: 10% ;
+    }
+
+    .banner-2 .banner-text h2{
+        font-size: 28px;
+    }
+
+    .banner-2 .banner-text p{
+        font-size: 14px !important;
+    }
+
     .banner{
-        min-height: 50vh;
+        height: calc(100vh - 12px);
     }
 }
 
@@ -160,4 +175,38 @@ h1{
 
 .card-text{
     font-size: 14px;
+}
+
+
+.navbar-brand .logo{
+    min-width: 200px;
+    width: 200px;
+}
+
+
+.banner-2{
+    position: relative;
+    background-image: url(img/2nd-banner.jpeg);
+    min-height: calc(100vh - 100px);
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-2 .banner-text{
+    position: absolute;
+    top: 20%;
+}
+
+.banner-2 .banner-text h2{
+    color: #ffffff;
+}
+
+.banner-2 .banner-text h2 span{
+    color: #fa6279;
+}
+
+.banner-2 .banner-text p{
+    color: #ffffff;
+    font-size: 20px;
 }
