@@ -511,7 +511,8 @@ h1 {
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
     position: fixed;
-    top: 50%;
+    /* top: 50%; */
+    bottom: -10%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -532,7 +533,9 @@ h1 {
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-    background-color: #000;
+    /* background-color: #000; */
+    transform: translateX(5px);
+    transition: 0.3s;
 }
 
 .facebook {
