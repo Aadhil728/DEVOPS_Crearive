@@ -76,6 +76,10 @@ h1 {
 
 
 /* The side navigation menu */
+.navbar-brand .logo{
+    margin: 12px 0 0 113px;
+}
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -94,14 +98,14 @@ h1 {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: yellow;
   }
   
   /* Position and style the close button (top right corner) */
@@ -111,6 +115,7 @@ h1 {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: #ffffff;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -239,9 +244,14 @@ h1 {
 
 
 @media (min-width:280px) and (max-width:1200px) {
+    .navbar-brand .brand-container{
+        text-align: center;
+    }
+
     .navbar-brand .logo {
         min-width: 100px;
         width: 100px;
+        margin: 20px 0;
     }
 
     .banner .banner-text h1 {
